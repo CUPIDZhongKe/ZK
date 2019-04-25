@@ -4,9 +4,9 @@
 typedef struct{
     unsigned int weight;
     unsigned int parent,lchild,rchild;
-}HTNode,*HuffmanCode;
+}HTNode,*HuffmanTree;
 typedef char ** HuffmanCode;
-void Select(HuffmanTree &HT,int n,int *s1,int *s2)
+void Select(HuffmanTree HT,int n,int *s1,int *s2)
 {
     HTNode *search[n];
     int m[n]={0};
